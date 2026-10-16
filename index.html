@@ -3,86 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tara Kape!</title>
-    <!-- Link to your external CSS file here -->
+    <meta name="theme-color" content="#efe5d5">
+    <meta name="description" content="Meet Tara Kape, your everyday coffee stop for Filipino-inspired drinks and warm moments.">
+    <title>Tara Kape! | Your everyday coffee stop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="navbar" id="navbar">
-        <span class="welcome-text">Welcome!</span>
-        <div class="logo">
-        <!-- <p class="logo">Tara Kape!</p> -->
-         <img class="logo-image" src="assets/logo.png">
-         </div>
-        <ul>
-            <li><a class="nav-links" href="#menu">Menu</a></li>
-            <li><a class="nav-links" href="#franchise">Franchise</a></li>
-            <li><a class="nav-links" href="#about">About Us</a></li>
-            <li><a class="navlink-active" href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    
-   
-    
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Tara Kape home">
+            <img class="logo-image" src="assets/logo.png" alt="">
+            <span>Tara Kape!</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="menu.html">Menu</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="#about">About us</a>
+            <a class="nav-cta" href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <section class="hero">
-        
-    <video autoplay loop muted playsinline class="hero-video">
-        <source src="assets/hero-section.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
-     <div class="hero-overlay"></div>
-     <div class="hero-content"> 
-        <h1 class="hero-heading">Kape? Kwento? Tara<span class="hero-heading-active">.</span></h1>
-        <p class="hero-subheading">Your everyday coffee stop</p><br><br>
-        <a href="#menu" class="btn-menu">Explore Menu</a>
-    </div>
-    </section>
-    
+    <main>
+        <section class="hero" id="home">
+            <video autoplay loop muted playsinline class="hero-video" aria-hidden="true">
+                <source src="assets/hero-section.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="eyebrow eyebrow-light">A little comfort in every cup</p>
+                <h1 class="hero-heading">Kape? Kwento? Tara<span class="hero-heading-active">.</span></h1>
+                <p class="hero-subheading">Your everyday coffee stop.</p>
+                <div class="button-row">
+                    <a href="menu.html" class="button button-light">Explore the menu</a>
+                    <a href="#about" class="text-link text-link-light">Get to know us <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#about">Scroll to explore <span aria-hidden="true">↓</span></a>
+        </section>
 
-    <section id="menu" class="menu">
-        
-        <h1 class="heading-menu">Try our Signature Drinks!</h1>
-        <div class="marquee-banner">
-            <div class="marquee-track">
-            <span id="marquee-text" class="marquee-text">TAHO LATTE TAHO LATTE TAHO LATTE TAHO LATTE&nbsp;</span>
-            <span id="marquee-text" class="marquee-text">TAHO LATTE TAHO LATTE TAHO LATTE TAHO LATTE&nbsp;</span>
-            <span id="marquee-text" class="marquee-text">TAHO LATTE TAHO LATTE TAHO LATTE TAHO LATTE&nbsp;</span>
-            <span id="marquee-text" class="marquee-text">TAHO LATTE TAHO LATTE TAHO LATTE TAHO LATTE&nbsp;</span>
-        </div></div>
-        <div class="signature-dashboard"><button class="btn-pan-lt" id="btn-pan-lt"><</button><div class="signature-drinks"><img id="product-image" src=""></div><button class="btn-pan-rt" id="btn-pan-rt">></button></div>
+        <section class="section about-section" id="about">
+            <div class="about-copy">
+                <p class="eyebrow">A cup with a story</p>
+                <h2 class="section-title">Coffee tastes better when there's time to <em>connect.</em></h2>
+                <p class="body-copy">At Tara Kape, coffee is an invitation to slow down, catch up, and make room for one more kwento. We bring familiar Filipino inspiration to everyday café favorites—served with a warm welcome.</p>
+                <a href="menu.html" class="text-link">Find your next favorite <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="about-art">
+                <img src="assets/coffee-bean.png" alt="Coffee beans, a simple reminder of what goes into every cup">
+                <div class="about-note">
+                    <span class="note-mark" aria-hidden="true">“</span>
+                    <p>Good coffee. Good company. Kwentuhang walang oras.</p>
+                </div>
+            </div>
+        </section>
 
-    </section>
-    <div class="pic-design">
-    <img src="assets/coffee-bean-design.png">
-    </div>
-    <section id="franchise" class="franchise">
-    
-    <div class="heading-franchise">
-        <h1 class="heading-franchise-text">Franchise with&nbsp;<span class="heading-accent">Tara Kape</span></h1>
-    </div>
-       
-        <div class="franchise-content"><h1 class="title-franchise">A PROVEN CONCEPT WITH REAL GROWTH</h1><p class="subheading-franchise">Tara Kape is more than just a coffee shop —<br>
-                                                                                                            it's a trusted brand with a growing community
-                                                                                                            and a strong market presence across the Philippines.</p>
-        </div>
-        <div class="branch-container"><img class="pic-branch"src="assets/franchise-data.png"></div>
-        <!-- TODO: FRANCHISE CONTENT -->
-        <!-- TODO: SHOW FRANCHISE STALL -->
+        <section class="values-band" aria-label="What makes a Tara Kape visit">
+            <article>
+                <span class="value-number">01</span>
+                <h3>Filipino at heart</h3>
+                <p>Local inspiration finds its way into familiar café favorites.</p>
+            </article>
+            <article>
+                <span class="value-number">02</span>
+                <h3>Made for your moment</h3>
+                <p>A quick pick-me-up or a reason to stay a little longer.</p>
+            </article>
+            <article>
+                <span class="value-number">03</span>
+                <h3>Always room for kwento</h3>
+                <p>Come as you are, bring a friend, and make yourself at home.</p>
+            </article>
+        </section>
 
-    </section>
+        <section class="section featured-section">
+            <div class="section-heading-row">
+                <div>
+                    <p class="eyebrow">Made for curious sips</p>
+                    <h2 class="section-title">A taste of <em>Tara Kape</em></h2>
+                </div>
+                <a class="text-link" href="menu.html">See the full menu <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="featured-grid">
+                <a class="featured-card" href="menu.html#signature-drinks">
+                    <img src="assets/taho-latte.png" alt="Taho Latte">
+                    <span class="card-kicker">Filipino-inspired</span>
+                    <h3>Taho Latte</h3>
+                    <p>A signature sip inspired by a familiar Filipino merienda favorite.</p>
+                </a>
+                <a class="featured-card" href="menu.html#signature-drinks">
+                    <img src="assets/matcha-latte.png" alt="Matcha Latte">
+                    <span class="card-kicker">Smooth &amp; mellow</span>
+                    <h3>Matcha Latte</h3>
+                    <p>A creamy green tea pick for a slower kind of coffee break.</p>
+                </a>
+                <a class="featured-card" href="menu.html#signature-drinks">
+                    <img src="assets/spanish-latte.png" alt="Spanish Latte">
+                    <span class="card-kicker">A café classic</span>
+                    <h3>Spanish Latte</h3>
+                    <p>A comforting espresso favorite with a sweet, milky finish.</p>
+                </a>
+            </div>
+            <p class="menu-note">Menu and availability may vary by branch. Ask your local Tara Kape for current offerings.</p>
+        </section>
 
+        <section class="review-invite">
+            <div class="review-stars" aria-hidden="true">✳ ✳ ✳</div>
+            <p class="eyebrow eyebrow-light">Your stories make our day</p>
+            <h2>Had a cup with us?</h2>
+            <p>We'd love to hear about your Tara Kape moment. Share your feedback with our team next time you visit.</p>
+            <a href="#contact" class="button button-light">Say hello</a>
+        </section>
 
+        <section class="section contact-section" id="contact">
+            <div class="contact-intro">
+                <p class="eyebrow">Let's talk</p>
+                <h2 class="section-title">Got a question?<br><em>We're all ears.</em></h2>
+                <p class="body-copy">For current branch locations, menu availability, feedback, or anything else, send us a note and we'll be happy to help.</p>
+                <div class="contact-aside">
+                    <span class="contact-icon" aria-hidden="true">✳</span>
+                    <p>Interested in bringing Tara Kape to your community?<br><a href="franchise.html">Learn about franchising →</a></p>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <label for="contact-name">Your name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" required>
+                <label for="contact-email">Email address</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                <label for="contact-message">What would you like to tell us?</label>
+                <textarea id="contact-message" name="message" rows="4" required></textarea>
+                <button class="button button-dark" type="submit">Prepare email <span aria-hidden="true">→</span></button>
+                <p class="form-note">This opens your email app with your message ready to send. You can add the Tara Kape email address before sending.</p>
+                <p class="form-status" id="contact-status" aria-live="polite"></p>
+            </form>
+        </section>
 
+        <section class="locations-strip">
+            <div>
+                <p class="eyebrow eyebrow-light">Find your next coffee break</p>
+                <h2>There's a little Tara Kape<br>moment waiting for you.</h2>
+            </div>
+            <a href="#contact" class="button button-light">Ask us about a branch</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html">
+            <img class="logo-image" src="assets/logo.png" alt="">
+            <span>Tara Kape!</span>
+        </a>
+        <p>Kape? Kwento? Tara.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="menu.html">Menu</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="#about">About us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <small>© <span id="current-year">2026</span> Tara Kape. All rights reserved.</small>
+    </footer>
     <script src="js/script.js" defer></script>
-
 </body>
 </html>
