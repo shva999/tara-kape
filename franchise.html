@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#efe5d5">
+    <meta name="description" content="Learn about partnering with Tara Kape and submit a franchise inquiry.">
+    <title>Franchise | Tara Kape!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Tara Kape home">
+            <img class="logo-image" src="assets/logo.png" alt="">
+            <span>Tara Kape!</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="menu.html">Menu</a>
+            <a class="current-page" href="franchise.html" aria-current="page">Franchise</a>
+            <a href="index.html#about">About us</a>
+            <a class="nav-cta" href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="inner-hero franchise-hero">
+            <div class="inner-hero-content">
+                <p class="eyebrow eyebrow-light">Grow with Tara Kape</p>
+                <h1>Bring good coffee<br><em>closer to home.</em></h1>
+                <p>Interested in sharing Tara Kape with your community? Start a conversation with our team about franchise opportunities.</p>
+                <a href="#inquiry" class="button button-light">Start an inquiry <span aria-hidden="true">↓</span></a>
+            </div>
+            <img class="franchise-hero-image" src="assets/tara-kape-branch.png" alt="Tara Kape branch">
+        </section>
+
+        <section class="franchise-story section">
+            <div class="franchise-story-copy">
+                <p class="eyebrow">A concept built around connection</p>
+                <h2 class="section-title">Make room for <em>more kwento.</em></h2>
+                <p class="body-copy">Tara Kape brings Filipino-inspired drinks and a welcoming café experience together. We’re looking to connect with people who share our love for good coffee, thoughtful hospitality, and community.</p>
+                <a class="text-link" href="#inquiry">Talk with our team <span aria-hidden="true">→</span></a>
+            </div>
+            <figure class="franchise-visual">
+                <img src="assets/franchise-data.png" alt="Tara Kape franchise information graphic">
+                <figcaption>Curious about partnering with Tara Kape? Let’s start with a conversation.</figcaption>
+            </figure>
+        </section>
+
+        <section class="franchise-steps">
+            <div class="steps-heading">
+                <p class="eyebrow">Your first steps</p>
+                <h2 class="section-title">A partnership starts<br>with a <em>hello.</em></h2>
+            </div>
+            <div class="steps-grid">
+                <article><span>01</span><h3>Tell us about you</h3><p>Share your location, background, and what draws you to Tara Kape.</p></article>
+                <article><span>02</span><h3>Have a conversation</h3><p>Our team can discuss the concept and answer your initial questions.</p></article>
+                <article><span>03</span><h3>Explore the details</h3><p>If there’s a fit, we’ll outline the next steps and information needed.</p></article>
+            </div>
+            <p class="menu-note">Franchise availability, qualifications, costs, and terms are subject to confirmation by the Tara Kape team.</p>
+        </section>
+
+        <section class="section faq-section">
+            <div>
+                <p class="eyebrow">Good questions</p>
+                <h2 class="section-title">A few things<br>you might <em>wonder.</em></h2>
+            </div>
+            <div class="faq-list">
+                <details>
+                    <summary>How do I ask about a franchise?</summary>
+                    <p>Send us an inquiry with your name, preferred area, and a little about your plans. Our team can follow up with current information.</p>
+                </details>
+                <details>
+                    <summary>What does it cost to open a branch?</summary>
+                    <p>Costs and requirements depend on current franchise terms. Please contact the Tara Kape team for accurate, up-to-date details.</p>
+                </details>
+                <details>
+                    <summary>Can I suggest a location?</summary>
+                    <p>Absolutely. Include the city or area you're considering in your inquiry so the team can review it with you.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="franchise-inquiry" id="inquiry">
+            <div>
+                <p class="eyebrow eyebrow-light">Let's start the conversation</p>
+                <h2>Tell us a little<br>about your idea.</h2>
+                <p>Use the form to prepare an email inquiry. Your email app will open so you can review it and add the Tara Kape contact address before sending.</p>
+            </div>
+            <form class="contact-form inquiry-form" id="franchise-form">
+                <label for="franchise-name">Your name</label>
+                <input id="franchise-name" name="name" type="text" autocomplete="name" required>
+                <label for="franchise-email">Email address</label>
+                <input id="franchise-email" name="email" type="email" autocomplete="email" required>
+                <label for="franchise-location">Preferred area</label>
+                <input id="franchise-location" name="location" type="text" placeholder="City or region" required>
+                <label for="franchise-message">Tell us about your interest</label>
+                <textarea id="franchise-message" name="message" rows="4" required></textarea>
+                <button class="button button-light" type="submit">Prepare inquiry <span aria-hidden="true">→</span></button>
+                <p class="form-status" id="franchise-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html"><img class="logo-image" src="assets/logo.png" alt=""><span>Tara Kape!</span></a>
+        <p>Kape? Kwento? Tara.</p>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="menu.html">Menu</a><a href="franchise.html">Franchise</a><a href="index.html#about">About us</a><a href="index.html#contact">Contact</a></nav>
+        <small>© <span id="current-year">2026</span> Tara Kape. All rights reserved.</small>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

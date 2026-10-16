@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#efe5d5">
+    <meta name="description" content="Explore signature drinks and café favorites from Tara Kape.">
+    <title>Menu | Tara Kape!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Tara Kape home">
+            <img class="logo-image" src="assets/logo.png" alt="">
+            <span>Tara Kape!</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="current-page" href="menu.html" aria-current="page">Menu</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="index.html#about">About us</a>
+            <a class="nav-cta" href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="inner-hero menu-hero">
+            <div class="inner-hero-content">
+                <p class="eyebrow eyebrow-light">Good things are brewing</p>
+                <h1>Something for<br><em>every kind of sip.</em></h1>
+                <p>From Filipino-inspired signatures to familiar café favorites, find the cup that fits your moment.</p>
+                <a href="#signature-drinks" class="button button-light">Meet the signatures <span aria-hidden="true">↓</span></a>
+            </div>
+            <img class="inner-hero-beans" src="assets/coffee-bean-design.png" alt="">
+        </section>
+
+        <section class="menu-feature" id="signature-drinks">
+            <div class="menu-feature-copy">
+                <p class="eyebrow">Meet the signature</p>
+                <h2 class="section-title" id="drink-name">Taho Latte</h2>
+                <p class="body-copy" id="drink-description">A signature sip inspired by a familiar Filipino merienda favorite.</p>
+                <div class="carousel-controls" aria-label="Choose a signature drink">
+                    <button class="carousel-button" id="btn-pan-lt" type="button" aria-label="Previous drink">←</button>
+                    <span class="carousel-count" id="drink-count" aria-live="polite">01 / 03</span>
+                    <button class="carousel-button" id="btn-pan-rt" type="button" aria-label="Next drink">→</button>
+                </div>
+            </div>
+            <div class="menu-feature-art">
+                <div class="marquee-banner" aria-hidden="true"><div class="marquee-track"><span class="marquee-text">TAHO LATTE · TAHO LATTE · TAHO LATTE ·&nbsp;</span><span class="marquee-text">TAHO LATTE · TAHO LATTE · TAHO LATTE ·&nbsp;</span></div></div>
+                <img id="product-image" src="assets/taho-latte.png" alt="Taho Latte">
+            </div>
+        </section>
+
+        <section class="section menu-list-section">
+            <div class="section-heading-row">
+                <div>
+                    <p class="eyebrow">Sip, stay, repeat</p>
+                    <h2 class="section-title">Our signature <em>line-up</em></h2>
+                </div>
+                <p class="body-copy menu-intro">A few favorites to get you started. Ask in-store for the latest menu and availability.</p>
+            </div>
+            <div class="menu-card-grid">
+                <article class="menu-card">
+                    <img src="assets/taho-latte.png" alt="Taho Latte in a cup">
+                    <div><span class="card-kicker">Filipino-inspired</span><h3>Taho Latte</h3><p>A creamy café sip inspired by the comforting flavors of taho.</p></div>
+                </article>
+                <article class="menu-card">
+                    <img src="assets/matcha-latte.png" alt="Matcha Latte in a cup">
+                    <div><span class="card-kicker">Smooth &amp; mellow</span><h3>Matcha Latte</h3><p>Earthy matcha and creamy milk come together for a mellow break.</p></div>
+                </article>
+                <article class="menu-card">
+                    <img src="assets/spanish-latte.png" alt="Spanish Latte in a cup">
+                    <div><span class="card-kicker">Café classic</span><h3>Spanish Latte</h3><p>A rich espresso favorite balanced with sweet, creamy milk.</p></div>
+                </article>
+            </div>
+            <p class="menu-note">Prices and availability vary by branch. Please check with your local Tara Kape.</p>
+        </section>
+        <section class="menu-bottom-cta">
+            <p class="eyebrow eyebrow-light">Your cup is calling</p>
+            <h2>Make room for one more kwento.</h2>
+            <a href="index.html#contact" class="button button-light">Get in touch</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html"><img class="logo-image" src="assets/logo.png" alt=""><span>Tara Kape!</span></a>
+        <p>Kape? Kwento? Tara.</p>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="menu.html">Menu</a><a href="franchise.html">Franchise</a><a href="index.html#about">About us</a><a href="index.html#contact">Contact</a></nav>
+        <small>© <span id="current-year">2026</span> Tara Kape. All rights reserved.</small>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
